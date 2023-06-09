@@ -9,8 +9,9 @@ class Student < Person
     self.classroom = classroom
   end
 
-  def classroom(classroom)
+  def classroom=(classroom)
     return if @classroom == classroom
+
     @classroom&.students&.delete(self)
     @classroom = classroom
     classroom.students << self
