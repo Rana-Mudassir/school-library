@@ -62,6 +62,15 @@ In order to run this project you need:
 - [ ] Ruby 
 - [ ] Code editor
 
+### Usage
+
+To run the project, execute the following command:
+
+
+  bundle install
+  ruby main.rb
+
+
 ### Setup
 
 Clone this repository to your desired folder:
