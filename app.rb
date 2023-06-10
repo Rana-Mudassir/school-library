@@ -46,7 +46,9 @@ class App
     print "Enter student's classroom (optional): "
     classroom = gets.chomp
     class_name = Classroom.new(classroom)
+    # rubocop:disable Lint/HashSyntax
     student = Student.new(age, name, parent_permission: parent_permission, classroom: class_name)
+    # rubocop:enable Lint/HashSyntax
     @people << student
   end
 
@@ -59,8 +61,9 @@ class App
     parent_permission = gets.chomp.downcase == 'true'
     print 'Enter teacher\'s specialization (optional): '
     specialization = gets.chomp
-
+    # rubocop:disable Lint/HashSyntax
     teacher = Teacher.new(age, name, parent_permission: parent_permission, specialization: specialization)
+    # rubocop:enable Lint/HashSyntax
     @people << teacher
   end
 

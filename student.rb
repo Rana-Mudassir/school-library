@@ -5,7 +5,9 @@ class Student < Person
   attr_reader :classroom, :parent_permission
 
   def initialize(age, name = 'unknown', parent_permission: true, classroom: nil)
+    # rubocop:disable Lint/HashSyntax
     super(name, age, parent_permission: parent_permission)
+    # rubocop:enable Lint/HashSyntax
     self.classroom = classroom
   end
 
