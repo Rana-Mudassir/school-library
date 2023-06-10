@@ -6,7 +6,7 @@ class Student < Person
 
   def initialize(age, name = 'unknown', parent_permission: true, classroom: nil)
     # rubocop:disable Lint/HashSyntax
-    super(name, age, parent_permission: parent_permission)
+    super(age, name, parent_permission: parent_permission)
     # rubocop:enable Lint/HashSyntax
     self.classroom = classroom
   end

@@ -48,7 +48,6 @@ class App
     class_name = Classroom.new(classroom)
     # rubocop:disable Lint/HashSyntax
     student = Student.new(age, name, parent_permission: parent_permission, classroom: class_name)
-    # rubocop:enable Lint/HashSyntax
     @people << student
   end
 
@@ -61,7 +60,7 @@ class App
     parent_permission = gets.chomp.downcase == 'true'
     print 'Enter teacher\'s specialization (optional): '
     specialization = gets.chomp
-    # rubocop:disable Lint/HashSyntax
+
     teacher = Teacher.new(age, name, parent_permission: parent_permission, specialization: specialization)
     # rubocop:enable Lint/HashSyntax
     @people << teacher
@@ -142,7 +141,7 @@ class App
     if person.nil?
       puts 'Person not found'
     else
-      puts "Rentals for person: #{person.name}"
+      puts "Rentals for person: #{person.correct_name}"
       rentals = @rentals.select { |r| r.person == person }
       rentals.each do |rental|
         puts "Book: #{rental.book.title}, Date: #{rental.date}"

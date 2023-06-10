@@ -5,7 +5,7 @@ class Teacher < Person
 
   def initialize(age, name = 'unknown', parent_permission: true, specialization: nil)
     # rubocop:disable Lint/HashSyntax
-    super(name, age, parent_permission: parent_permission)
+    super(age, name, parent_permission: parent_permission)
     # rubocop:enable Lint/HashSyntax
     @specialization = specialization
   end
