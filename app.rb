@@ -142,7 +142,7 @@ class App
     if person.nil?
       puts 'Person not found'
     else
-      puts "Rentals for person: #{person.correct_name}"
+      puts "Rentals for person: #{person.name}"
       rentals = @rentals.select { |r| r.person == person }
       rentals.each do |rental|
         puts "Book: #{rental.book.title}, Date: #{rental.date}"
