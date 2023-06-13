@@ -24,7 +24,7 @@
 
 # 📖 School Library <a name="about-project"></a>
 
-**School Library** is a ruby application library that contain record about people i.e students, teachers with name of books. It also allows you to add remove people and books, you ca also rent the books and the application keeps track of all this data 
+**School Library** is a ruby application library that contain record about people i.e students, teachers with name of books. It also allows you to add remove people and books, you ca also rent the books and the application keeps track of all this data
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -47,7 +47,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [ ] There is no live preview yet 
+- [ ] There is no live preview yet
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -59,17 +59,15 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-- [ ] Ruby 
+- [ ] Ruby
 - [ ] Code editor
 
 ### Usage
 
 To run the project, execute the following command:
 
-
-  bundle install
-  ruby main.rb
-
+bundle install
+ruby main.rb
 
 ### Setup
 
@@ -83,16 +81,21 @@ Install this project with:
 
 sudo install ruby
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Belden Mugauri**
+👤 **Rana Mudassir**
 
 - GitHub: [@Mudassir](https://github.com/Rana-Mudassir)
 - Facebook: [@Facebook](https://www.facebook.com/rana.mudasir.142)
 - LinkedIn: [@LinkedIn](https://www.linkedin.com/in/rana-mudassir-nazir-03541114a/)
+
+👤 **Dieum Akonkwa**
+
+- GitHub: [@dieum512](https://github.com/dieum512/)
+- Twitter: [@dieumakonkw](https://twitter.com/dieumakonkw)
+- LinkedIn: [Dieum Akonkwa](https://www.linkedin.com/in/dieum-akonkwa/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
