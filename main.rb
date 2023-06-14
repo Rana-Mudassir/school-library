@@ -7,7 +7,7 @@ class Main
   def initialize(app)
     @app = app
     @list_options = Option.new
-    @cli = GetMessage.new  
+    @cli = GetMessage.new
     @execute_action = MenuChoice.new(@app, @cli)
   end
 

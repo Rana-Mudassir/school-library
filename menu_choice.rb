@@ -17,7 +17,7 @@ class MenuChoice
     when 5
       CreateRental.new(@app).execute
     when 6
-      ListRentalsForPerson.new(@app, @cli).execute  # Pass @cli instead of self
+      ListRentalsForPerson.new(@app, @cli).execute # Pass @cli instead of self
     end
   end
 end
