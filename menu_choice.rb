@@ -1,6 +1,7 @@
 class MenuChoice
-  def initialize(app)
+  def initialize(app, cli)
     @app = app
+    @cli = cli
   end
 
   def execute_action(choice)
@@ -16,7 +17,7 @@ class MenuChoice
     when 5
       CreateRental.new(@app).execute
     when 6
-      ListRentalsForPerson.new(@app, self).execute
+      ListRentalsForPerson.new(@app, @cli).execute  # Pass @cli instead of self
     end
   end
 end

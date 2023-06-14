@@ -7,14 +7,14 @@ class Main
   def initialize(app)
     @app = app
     @list_options = Option.new
-    @execute_action = MenuChoice.new(@app)
-    @get_request = GetMessage.new
+    @cli = GetMessage.new  
+    @execute_action = MenuChoice.new(@app, @cli)
   end
 
   def main
     loop do
       @list_options.list_options
-      choice = @get_request.get_request('Enter your choice: ', :to_i)
+      choice = @cli.get_request('Enter your choice: ', :to_i)
 
       case choice
       when 1..6
