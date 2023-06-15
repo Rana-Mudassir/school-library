@@ -33,7 +33,7 @@ class Main
   def create_json_files
     CreateJsonBook.new(@app).create_file
     CreateJsonPeople.new(@app).create_file
-    # CreateJsonRental.new(@app).create_file
+    CreateJsonRental.new(@app).create_file
   end
 end
 
