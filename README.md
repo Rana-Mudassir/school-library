@@ -10,9 +10,7 @@
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
-  - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -79,6 +77,14 @@ sudo install ruby
 
 ## 👥 Authors <a name="authors"></a>
 
+### Run tests
+
+Run test in this project with: rspec tests
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 👥 Authors <a name="authors"></a>
+
 👤 **Rana Mudassir**
 
 - GitHub: [@Mudassir](https://github.com/Rana-Mudassir)
@@ -95,7 +101,8 @@ sudo install ruby
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Unit testing**
+- [ ] **Develop the mobile version UI**
+- [ ] **Develop the desktop version UI**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
