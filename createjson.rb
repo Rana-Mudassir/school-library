@@ -6,9 +6,16 @@ class CreateJsonBook
   end
 
   def create_file
-    books = @app.books.map { |book| { Title: book.title, Author: book.author } }
+    my_book = {}
+    books = []
+    @app.books.each do |book|
+      single_boook = { Title: book.title, Author: book.author }
+      books.push(single_boook)
+    end
     my_book = { Book: books }.to_json
-    File.write('books.json', my_book)
+    open('books.json', 'a') do |file|
+      file.puts my_book
+    end
   end
 end
 
@@ -18,10 +25,16 @@ class CreateJsonPeople
   end
 
   def create_file
-    persons = @app.people.map { |people| { Person: people, Name: people.name, ID: people.id, Age: people.age } }
-    my_person = { "Person" => persons }.to_json
-
-    File.write('people.json', my_person)
+    my_person = {}
+    persons = []
+    @app.people.each do |people|
+      single_person = { Person: people, Name: people.name, ID: people.id, Age: people.age }
+      persons.push(single_person)
+    end
+    my_person = { Person: persons }.to_json
+    open('people.json', 'a') do |file|
+      file.puts my_person
+    end
   end
 end
 
@@ -31,9 +44,16 @@ class CreateJsonRental
   end
 
   def create_file
-    rentals = @app.rentals.map { |rental| { Name: rental.book.title, Date: rental.date } }
-    my_rental = { "Rentals" => rentals }.to_json
+    my_rental = {}
+    rentals = []
+    @app.rentals.each do |rental|
+      single_rental = { Name: rental.book.title, Date: rental.date }
+      rentals.push(single_rental)
+    end
 
-    File.write('rental.json', my_rental)
+    my_rental = { Rentals: rentals }.to_json
+    open('rental.json', 'a') do |file|
+      file.puts my_rental
+    end
   end
 end
