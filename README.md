@@ -6,14 +6,11 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
-  - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -43,11 +40,6 @@
 ### Key Features <a name="key-features"></a>
 
 - **Class inheritance and extention**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [ ] There is no live preview yet
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,6 +77,14 @@ sudo install ruby
 
 ## 👥 Authors <a name="authors"></a>
 
+### Run tests
+
+Run test in this project with: rspec tests
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 👥 Authors <a name="authors"></a>
+
 👤 **Rana Mudassir**
 
 - GitHub: [@Mudassir](https://github.com/Rana-Mudassir)
@@ -101,7 +101,8 @@ sudo install ruby
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Unit testing**
+- [ ] **Develop the mobile version UI**
+- [ ] **Develop the desktop version UI**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
